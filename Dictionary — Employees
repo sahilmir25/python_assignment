@@ -1,0 +1,68 @@
+employee = {
+    "e1": {
+        "name": "Amit",
+        "designation": "Manager",
+        "department": "IT",
+        "salary": 60000
+    },
+
+    "e2": {
+        "name": "Rahul",
+        "designation": "Developer",
+        "department": "CSE",
+        "salary": 55000
+    },
+
+    "e3": {
+        "name": "Priya",
+        "designation": "Analyst",
+        "department": "Finance",
+        "salary": 50000
+    },
+
+    "e4": {
+        "name": "Suman",
+        "designation": "Developer",
+        "department": "IT",
+        "salary": 65000
+    },
+
+    "e5": {
+        "name": "Riya",
+        "designation": "HR",
+        "department": "HR",
+        "salary": 45000
+    }
+}
+
+
+# i) Print record of employee e1
+print("Record of e1:")
+print(employee["e1"])
+
+
+# ii) Print department of e4
+print("\nDepartment of e4:")
+print(employee["e4"]["department"])
+
+
+# iii) Employee having maximum salary
+max_employee = max(
+    employee.items(),
+    key=lambda x: x[1]["salary"]
+)
+
+print("\nEmployee having maximum salary:")
+print(max_employee)
+
+
+# iv) Insert new employee
+employee["e6"] = {
+    "name": "Arjun",
+    "designation": "Tester",
+    "department": "QA",
+    "salary": 48000
+}
+
+print("\nAfter inserting new employee:")
+print(employee)
