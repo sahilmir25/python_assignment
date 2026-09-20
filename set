@@ -1,0 +1,6 @@
+my_set = {10, 20, 30, 40}
+
+print(my_set)
+
+if 20 in my_set:
+    print("20 is present")
