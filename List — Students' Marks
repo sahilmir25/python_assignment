@@ -1,0 +1,27 @@
+marks = [
+    45, 67, 32, 78, 56,
+    89, 40, 72, 35, 91,
+    63, 48, 29, 85, 76,
+    54, 39, 82, 95, 61
+]
+
+# i) Average marks
+average = sum(marks) / len(marks)
+
+print("Average marks:", average)
+
+
+# ii) Number of students having more than 40 marks
+count = 0
+
+for mark in marks:
+    if mark > 40:
+        count += 1
+
+print("Students having more than 40 marks:", count)
+
+
+# iii) Highest marks
+highest = max(marks)
+
+print("Highest marks:", highest)
