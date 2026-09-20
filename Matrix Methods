@@ -1,0 +1,22 @@
+import numpy as np
+
+A = np.array([
+    [4, 2, 1],
+    [1, 3, 2],
+    [2, 1, 5]
+])
+
+print("Matrix A:")
+print(A)
+
+# Determinant
+print("\nDeterminant:")
+print(np.linalg.det(A))
+
+# Inverse
+print("\nInverse:")
+print(np.linalg.inv(A))
+
+# Rank
+print("\nRank:")
+print(np.linalg.matrix_rank(A))
