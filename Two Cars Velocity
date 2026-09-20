@@ -1,0 +1,19 @@
+distance = float(input("Enter the distance between the cars (km): "))
+
+# Same direction: meet after 3 hours
+# Opposite direction: meet after 1 hour
+
+same_direction_time = 3
+opposite_direction_time = 1
+
+# v1 - v2 = distance / 3
+# v1 + v2 = distance / 1
+
+relative_same = distance / same_direction_time
+relative_opposite = distance / opposite_direction_time
+
+v1 = (relative_opposite + relative_same) / 2
+v2 = (relative_opposite - relative_same) / 2
+
+print("Velocity of first car =", v1, "km/h")
+print("Velocity of second car =", v2, "km/h")
