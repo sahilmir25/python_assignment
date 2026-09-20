@@ -1,0 +1,56 @@
+students = {
+    "S1": {
+        "name": "Amit",
+        "department": "CSE",
+        "marks": 85
+    },
+    "S2": {
+        "name": "Rahul",
+        "department": "IT",
+        "marks": 72
+    },
+    "S3": {
+        "name": "Priya",
+        "department": "CSE",
+        "marks": 95
+    },
+    "S4": {
+        "name": "Riya",
+        "department": "ECE",
+        "marks": 68
+    },
+    "S5": {
+        "name": "Suman",
+        "department": "IT",
+        "marks": 88
+    }
+}
+
+# i) Sort according to marks
+sorted_students = dict(
+    sorted(students.items(), key=lambda x: x[1]["marks"])
+)
+
+print("Students sorted according to marks:")
+for key, value in sorted_students.items():
+    print(key, value)
+
+
+# ii) Student with maximum marks
+maximum = max(
+    students.items(),
+    key=lambda x: x[1]["marks"]
+)
+
+print("\nStudent with maximum marks:")
+print(maximum)
+
+
+# iii) Average marks
+total = sum(
+    student["marks"] for student in students.values()
+)
+
+average = total / len(students)
+
+print("\nAverage marks:", average)
