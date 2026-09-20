@@ -1,0 +1,8 @@
+student = {
+    "name": "Amit",
+    "department": "CSE",
+    "marks": 85
+}
+
+print(student.get("name"))
+print(student.get("marks"))
