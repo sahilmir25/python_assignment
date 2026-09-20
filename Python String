@@ -1,0 +1,46 @@
+text = "Python programming"
+
+# i) Display Python
+print("First word:", text.split()[0])
+
+
+# ii) Display programming
+print("Second word:", text.split()[1])
+
+
+# iii) Check whether string contains "python"
+if "python" in text.lower():
+    print('"python" is present in the string')
+else:
+    print('"python" is not present in the string')
+
+
+# New string
+new_string = text
+
+print("New string:", new_string)
+
+
+# iv) Length of new string
+print("Length:", len(new_string))
+
+
+# v) Number of words
+print("Number of words:", len(new_string.split()))
+
+
+# vi) Capitalize each word
+print("Capitalized:", new_string.title())
+
+
+# vii) Remove all spaces
+no_space = new_string.replace(" ", "")
+
+print("Without spaces:", no_space)
+
+
+# viii) Frequency of a, p, n, m
+print("Frequency of 'a':", new_string.lower().count("a"))
+print("Frequency of 'p':", new_string.lower().count("p"))
+print("Frequency of 'n':", new_string.lower().count("n"))
+print("Frequency of 'm':", new_string.lower().count("m"))
